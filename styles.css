@@ -1278,8 +1278,8 @@ html {
 
 /* Estilos para informações da UFERSA */
 .university-info {
-    padding: 4rem 5%;
-    background: #fff;
+    padding: 4rem 0;
+    background-color: var(--light-bg);
 }
 
 .info-container {
@@ -1321,68 +1321,97 @@ html {
 
 /* Novos estilos para a seção de apresentação do curso */
 .course-info {
-    padding: 4rem 5%;
-    background: #fff;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    color: var(--white);
 }
 
 .course-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2rem;
 }
 
 .course-description {
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    text-align: center;
-    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
 }
 
-.course-description p {
+.course-description h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.course-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.course-features li {
     margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.course-features li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--white);
 }
 
 .course-highlights {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 .highlight {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
     text-align: center;
+    backdrop-filter: blur(10px);
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .highlight:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .highlight-icon {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-/* Atualização do estilo da seção sobre */
-.about-content {
-    line-height: 1.6;
+.highlight h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
-.about-content p {
-    margin-bottom: 1rem;
+@media (max-width: 768px) {
+    .course-content {
+        grid-template-columns: 1fr;
+    }
+
+    .course-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.stat-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
+@media (max-width: 480px) {
+    .course-highlights {
+        grid-template-columns: 1fr;
+    }
 
-/* Atualização do countdown */
-.event-description {
-    margin: 1.5rem 0;
-    line-height: 1.6;
+    .university-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Animações avançadas para o hero */
@@ -3338,5 +3367,150 @@ img[src="@Designer.png"] {
 
     .highlight-item {
         padding: 1rem;
+    }
+} 
+
+/* Seção Universidade */
+.university-info {
+    padding: 4rem 0;
+    background-color: var(--light-bg);
+}
+
+.university-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.university-card {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+}
+
+.university-card-icon {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.university-logo {
+    width: 120px;
+    height: auto;
+}
+
+.university-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.university-card p {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+/* Seção Curso */
+.course-info {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    color: var(--white);
+}
+
+.course-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.course-description {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.course-description h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.course-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.course-features li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.course-features li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--white);
+}
+
+.course-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.highlight {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.highlight h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .course-content {
+        grid-template-columns: 1fr;
+    }
+
+    .course-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .course-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .university-grid {
+        grid-template-columns: 1fr;
     }
 } 
