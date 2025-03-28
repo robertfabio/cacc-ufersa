@@ -1,55 +1,71 @@
-# Portal de Recepção - CACC UFERSA
+# CACC UFERSA - Site Oficial
 
-## Sobre o Projeto
+## 🚀 Sobre o Projeto
 
-Este é um portal de recepção para calouros do curso de Ciência da Computação da UFERSA. O projeto utiliza React com TypeScript e foi construído com Vite para oferecer uma experiência moderna e responsiva tanto para dispositivos móveis quanto para desktop.
+O site oficial do Centro Acadêmico de Ciência da Computação (CACC) da UFERSA, desenvolvido com um design moderno e temática espacial. Este projeto visa criar uma plataforma digital que represente e conecte a comunidade acadêmica do curso.
 
-## Tecnologias Utilizadas
+### ✨ Características
 
-- React 18
-- TypeScript
-- Tailwind CSS
-- Framer Motion (para animações)
-- Vite (como bundler)
+- **Design Espacial**: Interface moderna com elementos espaciais interativos
+- **Responsividade**: Adaptação perfeita para todos os dispositivos
+- **Seções Informativas**: 
+  - Sobre o CACC
+  - Áreas de Conhecimento
+  - Eventos
+  - FAQ
+  - Contato
 
-## Estrutura do Projeto
+### 🛠️ Tecnologias
 
-```
-/src
-  /components       # Componentes React
-  /styles           # Arquivos CSS e estilos
-  /mcp-knowledge    # Dados estruturados
-/public             # Arquivos estáticos
-```
+- HTML5
+- CSS3 (com animações e efeitos modernos)
+- JavaScript (vanilla)
+- Design Responsivo
 
-## Funcionalidades
+### 🎯 Objetivos
 
-- Layout responsivo para desktop e mobile
-- Tema espacial com animações
-- Contagem regressiva para o evento
-- Timeline de atividades
-- Informações sobre o curso
+- Fornecer informações sobre o curso e o centro acadêmico
+- Facilitar a comunicação entre alunos e representantes
+- Divulgar eventos e atividades acadêmicas
+- Apresentar as áreas de conhecimento do curso
+- Manter a comunidade acadêmica conectada
 
-## Como Executar
+### 🌟 Destaques
 
-1. Instale as dependências:
-   ```
-   npm install
-   ```
+- Animações suaves e interativas
+- Sistema de FAQ categorizado
+- Contador para próximos eventos
+- Formulário de contato integrado
+- Elementos visuais espaciais
 
-2. Execute o servidor de desenvolvimento:
-   ```
-   npm run dev
-   ```
+## 🚀 Como Executar
 
-3. Acesse o projeto em [http://localhost:3000](http://localhost:3000)
-
-## Build para Produção
-
-Para gerar a versão de produção:
-
-```
-npm run build
+1. Clone o repositório
+```bash
+git clone https://github.com/robertfabio/cacc-ufersa.git
 ```
 
-Os arquivos serão gerados na pasta `dist`.
+2. Abra o arquivo index.html em seu navegador
+
+## 👥 Contribuição
+
+Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar o site, sinta-se à vontade para:
+
+1. Fazer um Fork do projeto
+2. Criar uma Branch para sua Feature (`git checkout -b feature/NovaFeature`)
+3. Commit suas mudanças (`git commit -m 'Adicionando nova feature'`)
+4. Push para a Branch (`git push origin feature/NovaFeature`)
+5. Abrir um Pull Request
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 📞 Contato
+
+Centro Acadêmico de Ciência da Computação - UFERSA
+- Instagram: [@cacc.ufersa](https://instagram.com/cacc.ufersa)
+- Discord: [Servidor CACC](https://discord.gg/seu-servidor)
+
+---
+Desenvolvido com 💙 pelo CACC UFERSA
