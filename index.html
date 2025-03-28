@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACC - Centro Acadêmico de Ciência da Computação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="expandable-sections.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/png" href="cacclogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="cacclogo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="cacclogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="cacclogo.png">
+    <meta name="theme-color" content="#89CFF0">
+    <link rel="stylesheet" href="space-theme.css">
+    <style>
+        :root {
+            --dynamic-primary: #89CFF0;
+            --dynamic-secondary: #7BB5E3;
+            --dynamic-gradient: linear-gradient(135deg, var(--baby-blue) 0%, var(--baby-blue-darker) 100%);
+        }
+    </style>
+</head>
+<body class="space-theme">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="cacclogo.png" alt="Logo CACC" class="logo-img">
+                <div class="logo-text">
+                    <span>CACC</span>
+                    <small>UFERSA - 2025.1</small>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#areas" class="nav-link">Áreas</a></li>
+                <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="space-scene">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            
+            <!-- Planetas -->
+            <div class="planet planet-1">
+                <div class="planet-ring"></div>
+            </div>
+            <div class="planet planet-2"></div>
+            <div class="planet planet-3">
+                <div class="planet-atmosphere"></div>
+            </div>
+            
+            <!-- Meteoros -->
+            <div class="shooting-stars">
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+            </div>
+            
+            <!-- Nebulosa -->
+            <div class="nebula"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-mascot">
+                <img src="moonwithsolo.png" alt="Mascote CACC" class="floating-mascot">
+            </div>
+
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="glowing-text">Centro Acadêmico</span>
+                    <span class="glowing-text">de Computação</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Explorando o universo da tecnologia com inovação, 
+                    comunidade e excelência acadêmica.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#sobre" class="cta-button primary">
+                        <span class="button-text">Conheça-nos</span>
+                        <span class="button-icon">🚀</span>
+                    </a>
+                    <a href="#eventos" class="cta-button secondary">
+                        <span class="button-text">Eventos</span>
+                        <span class="button-icon">📅</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Role para baixo</span>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2 class="section-title space-text-glow">Sobre Nós</h2>
+            <!-- Elementos espaciais decorativos -->
+            <div class="space-particle" style="top: 10%; left: 5%; width: 3px; height: 3px;"></div>
+            <div class="space-particle" style="top: 15%; right: 10%; width: 2px; height: 2px;"></div>
+            <div class="space-particle" style="bottom: 20%; left: 15%; width: 4px; height: 4px;"></div>
+            <div class="space-planet" style="position: absolute; top: -50px; right: 10%; width: 80px; height: 80px;">
+                <img src="public/planet.svg" alt="Planeta decorativo" style="width: 100%; height: 100%; opacity: 0.7;">
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Centro Acadêmico de Ciência da Computação</h3>
+                        <p class="about-description">
+                            O Centro Acadêmico de Ciência da Computação (CACC) é a entidade representativa dos estudantes
+                            do curso de Ciência da Computação da UFERSA. Como uma constelação de mentes brilhantes, 
+                            navegamos juntos pelo universo da tecnologia, explorando novos horizontes e descobrindo 
+                            soluções inovadoras para os desafios do futuro digital.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🚀</span>
+                                <div class="highlight-info">
+                                    <h4>Representação Estudantil</h4>
+                                    <p>Voz ativa nas decisões do curso e da universidade</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🌌</span>
+                                <div class="highlight-info">
+                                    <h4>Integração</h4>
+                                    <p>Eventos e atividades para unir a comunidade acadêmica</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">✨</span>
+                                <div class="highlight-info">
+                                    <h4>Inovação</h4>
+                                    <p>Promoção de projetos e iniciativas tecnológicas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image space-planet">
+                    <img src="moon1.png" alt="Mascote CACC" class="about-logo">
+                </div>
+            </div>
+
+            <div class="expandable-section">
+                <div class="expandable-header">
+                    <h3>Nossa Missão e Valores</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="expandable-content">
+                    <div class="mission-values">
+                        <div class="mission-card">
+                            <div class="space-particle" style="top: 10px; right: 20px; width: 2px; height: 2px;"></div>
+                            <h3>Nossa Missão</h3>
+                            <p>Representar e defender os interesses dos estudantes de Computação, promovendo sua formação acadêmica, profissional e pessoal através de uma jornada de descobertas e inovação.</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="space-particle" style="bottom: 15px; left: 25px; width: 3px; height: 3px;"></div>
+                            <h3>Nossa Visão</h3>
+                            <p>Ser referência em representação estudantil, contribuindo para a excelência do curso e o desenvolvimento tecnológico da região, explorando novos horizontes como verdadeiros astronautas do conhecimento.</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="space-particle" style="top: 20px; left: 15px; width: 2px; height: 2px;"></div>
+                            <h3>Nossos Valores</h3>
+                            <ul class="values-list">
+                                <li>Transparência e Ética</li>
+                                <li>Inovação e Criatividade</li>
+                                <li>Inclusão e Diversidade</li>
+                                <li>Compromisso com a Educação</li>
+                                <li>Exploração e Descoberta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="areas-section">
+        <div class="container">
+            <h2 class="section-title">Áreas de Estudo</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">👨‍💻</span>
+                    </div>
+                    <h3>Programação</h3>
+                    <p>Aprenda diferentes linguagens e paradigmas de programação, desde o básico até conceitos avançados.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">🔧</span>
+                    </div>
+                    <h3>Hardware</h3>
+                    <p>Explore a arquitetura de computadores, sistemas embarcados e projetos com Arduino.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">🌐</span>
+                    </div>
+                    <h3>Redes</h3>
+                    <p>Estude protocolos, configuração de redes e segurança da informação.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">💾</span>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <p>Aprenda sobre modelagem, SQL, NoSQL e administração de bancos de dados.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">🤖</span>
+                    </div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Explore machine learning, deep learning e processamento de linguagem natural.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">📱</span>
+                    </div>
+                    <h3>Desenvolvimento Mobile</h3>
+                    <p>Crie aplicativos para iOS e Android usando tecnologias modernas.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">⚙️</span>
+                    </div>
+                    <h3>Engenharia de Software</h3>
+                    <p>Aprenda metodologias ágeis, padrões de projeto e boas práticas de desenvolvimento.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">☁️</span>
+                    </div>
+                    <h3>Computação em Nuvem</h3>
+                    <p>Explore serviços cloud, DevOps e infraestrutura como código.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <span class="area-emoji">🎮</span>
+                    </div>
+                    <h3>Computação Gráfica e Jogos</h3>
+                    <p>Desenvolva jogos, aprenda computação gráfica, realidade virtual e aumentada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventos" class="upcoming-events">
+        <div class="container">
+            <h2 class="section-title space-text-glow">Próximos Eventos</h2>
+            
+            <div class="event-card">
+                <div class="event-card-inner">
+                    <div class="event-header">
+                        <div class="event-date">
+                            <div class="date-day">14</div>
+                            <div class="date-month">ABRIL</div>
+                            <div class="date-year">2025</div>
+                        </div>
+                        <div class="event-badge">Evento Principal</div>
+                    </div>
+                    
+                    <div class="event-content">
+                        <h3 class="event-title">Recepção de Calouros 2025.1</h3>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <span class="meta-icon">⏰</span>
+                                <span>08:00 - 12:00</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">📍</span>
+                                <span>UFERSA - LCC</span>
+                            </div>
+                        </div>
+                        <p class="event-description">
+                            Venha conhecer o curso de Ciência da Computação! Apresentaremos a estrutura do curso, 
+                            os laboratórios, os professores e todas as oportunidades que você terá durante sua 
+                            jornada acadêmica.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight">
+                                <span class="highlight-icon">🎓</span>
+                                <span>Apresentação do Curso</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-icon">👥</span>
+                                <span>Conheça seus Professores</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-icon">💻</span>
+                                <span>Tour pelos Laboratórios</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="countdown-container">
+                        <h4 class="countdown-title">Tempo até o evento</h4>
+                        <div class="countdown" id="countdown">
+                            <!-- Countdown será preenchido via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-particles">
+                    <div class="space-particle" style="top: 10%; left: 5%;"></div>
+                    <div class="space-particle" style="top: 30%; right: 10%;"></div>
+                    <div class="space-particle" style="bottom: 20%; left: 15%;"></div>
+                    <div class="space-particle" style="bottom: 40%; right: 20%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title space-text-glow">Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-categories">
+                    <button class="faq-category active">Geral</button>
+                    <button class="faq-category">Curso</button>
+                    <button class="faq-category">Ingresso</button>
+                    <button class="faq-category">Atividades</button>
+                </div>
+                <div class="faq-items">
+                    <!-- Geral -->
+                    <div class="faq-item" data-category="geral">
+                        <div class="faq-question">
+                            <h3>O que é o CACC e qual sua função?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>O Centro Acadêmico de Ciência da Computação (CACC) é a entidade representativa dos estudantes do curso. Nossa função inclui:</p>
+                                <ul>
+                                    <li>Representar os interesses dos estudantes junto à instituição</li>
+                                    <li>Organizar eventos acadêmicos e sociais</li>
+                                    <li>Promover a integração entre os alunos</li>
+                                    <li>Apoiar iniciativas estudantis</li>
+                                    <li>Facilitar a comunicação entre alunos e professores</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Curso -->
+                    <div class="faq-item" data-category="curso">
+                        <div class="faq-question">
+                            <h3>Qual é o objetivo do Curso de Ciência da Computação?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O curso forma profissionais capazes de desenvolver soluções computacionais inovadoras. Nossos principais objetivos incluem:</p>
+                            <ul>
+                                <li>Formação sólida em programação e matemática</li>
+                                <li>Desenvolvimento de pensamento lógico e analítico</li>
+                                <li>Capacitação em tecnologias modernas</li>
+                                <li>Preparação para pesquisa e inovação</li>
+                                <li>Desenvolvimento de habilidades práticas e teóricas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="curso">
+                        <div class="faq-question">
+                            <h3>Qual é a duração e a estrutura do curso?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O curso tem as seguintes características:</p>
+                            <ul>
+                                <li>Duração mínima de 4 anos (8 semestres)</li>
+                                <li>Carga horária total de 3.200 horas</li>
+                                <li>Aulas nos turnos matutino e vespertino</li>
+                                <li>Disciplinas teóricas e práticas</li>
+                                <li>Atividades complementares obrigatórias</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ingresso -->
+                    <div class="faq-item" data-category="ingresso">
+                        <div class="faq-question">
+                            <h3>Como funciona o ingresso no curso?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Existem várias formas de ingressar no curso:</p>
+                            <ul>
+                                <li>SISU - Principal forma de ingresso, usando nota do ENEM</li>
+                                <li>Reopção - Para alunos de outros cursos da UFERSA</li>
+                                <li>Transferência - Para alunos de outras instituições</li>
+                                <li>Portador de diploma - Para quem já tem graduação</li>
+                                <li>40 vagas por semestre (2025.1 e 2025.2)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="ingresso">
+                        <div class="faq-question">
+                            <h3>Preciso ter conhecimento prévio em programação?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Não é necessário conhecimento prévio em programação. O curso é estruturado para:</p>
+                            <ul>
+                                <li>Introduzir conceitos básicos desde o início</li>
+                                <li>Desenvolver o raciocínio lógico gradualmente</li>
+                                <li>Oferecer suporte através de monitorias</li>
+                                <li>Disponibilizar materiais complementares</li>
+                                <li>Acompanhamento individual quando necessário</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Atividades -->
+                    <div class="faq-item" data-category="atividades">
+                        <div class="faq-question">
+                            <h3>Quais projetos e atividades extracurriculares existem?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O curso oferece diversas oportunidades extracurriculares:</p>
+                            <ul>
+                                <li>Empresa Júnior de Computação</li>
+                                <li>Grupos de Pesquisa em várias áreas</li>
+                                <li>Maratona de Programação e Hackathons</li>
+                                <li>Projetos de Extensão com a comunidade</li>
+                                <li>Iniciação Científica e Monitorias</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="atividades">
+                        <div class="faq-question">
+                            <h3>Como posso participar do CACC?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Existem várias formas de participar do CACC:</p>
+                            <ul>
+                                <li>Participar das assembleias e reuniões</li>
+                                <li>Candidatar-se nas eleições anuais</li>
+                                <li>Voluntariar-se em eventos e projetos</li>
+                                <li>Propor novas iniciativas e ideias</li>
+                                <li>Seguir e interagir em nossas redes sociais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <span class="contact-emoji">📧</span>
+                    </div>
+                    <h3>Email</h3>
+                    <p>cacc.ufersa@gmail.com</p>
+                    <a href="mailto:cacc.ufersa@gmail.com" class="contact-action-btn">
+                        <span>Enviar Email</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <span class="contact-emoji">📍</span>
+                    </div>
+                    <h3>Localização</h3>
+                    <p>UFERSA - Campus Mossoró</p>
+                    <p>Av. Francisco Mota, 572 - Bairro Costa e Silva</p>
+                    <p>Mossoró/RN - CEP: 59.625-900</p>
+                    <a href="https://maps.google.com/?q=UFERSA+Campus+Mossoro" target="_blank" class="contact-action-btn">
+                        <span>Ver no Mapa</span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <span class="contact-emoji">🌐</span>
+                    </div>
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/cacc.ufersa" target="_blank" class="social-link">
+                            <img src="instagram_2111463.png" alt="Instagram" class="social-icon-img" style="filter: brightness(0) invert(1);">
+                            <span>@cacc.ufersa</span>
+                        </a>
+                        <a href="https://discord.gg/seu-link" target="_blank" class="social-link">
+                            <img src="discord_5968756.png" alt="Discord" class="social-icon-img" style="filter: brightness(0) invert(1);">
+                            <span>Servidor Discord</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h3>Entre em Contato</h3>
+                    <p>Envie sua mensagem e retornaremos em breve!</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu melhor email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="evento">Eventos</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span>Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="cacclogo.png" alt="Logo CACC" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <span>CACC</span>
+                        <small>UFERSA - 2025.1</small>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#areas">Áreas de Estudo</a></li>
+                            <li><a href="#eventos">Eventos</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="https://sigaa.ufersa.edu.br/sigaa/verTelaLogin.do" target="_blank">SIGAA</a></li>
+                            <li><a href="https://bibliotecas.ufersa.edu.br/" target="_blank">Biblioteca</a></li>
+                            <li><a href="https://prograd.ufersa.edu.br/calendario-academico/" target="_blank">Calendário Acadêmico</a></li>
+                            <li><a href="https://sigaa.ufersa.edu.br/sigaa/verTelaLogin.do" target="_blank">Portal do Aluno</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Centro Acadêmico de Ciência da Computação - UFERSA</p>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd6Y2E3OGRpcXF4Y2t0M3k4NmF0bXBnOWF4ZWx0b2RqbzNqeGptdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WUlplcMpOCEmTGBtBW/giphy.gif" alt="Programador animado" style="width: 50px; margin-left: 10px;">
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="expandable.js"></script>
+</body>
+</html>
